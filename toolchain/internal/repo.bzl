@@ -102,7 +102,7 @@ llvm_repo_attrs.update({
               "As with `llvm_mirror`, these sources will take precedence over the official LLVM " +
               "release sources.",
     ),
-    "netrc": attr.string(
+    "netrc": attr.label(
         mandatory = False,
         doc = "Path to the netrc file for authenticated LLVM URL downloads.",
     ),
